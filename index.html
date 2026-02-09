@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GameGame</title>
+        <style>
+            /* Engine Specific */
+            *{
+                margin:0;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canv"></canvas>
+        <script src="./engine/Engine.js"></script>
+        <script src="./engine/Scene.js"></script>
+        <script src="./engine/GameObject.js"></script>
+        <script src="./engine/Component.js"></script>
+        <script src="./engine/Input.js"></script>
+        <script src="./engine/Time.js"></script>
+        
+        <script src="./engine/components/Transform.js"></script>
+        <script src="./engine/components/TextLabel.js"></script>
+        <script src="./engine/components/Polygon.js"></script>
+        
+    
+        <script src="./game/MainScene.js"></script>
+
+        <script src="./game/PlayerComponent.js"></script>
+        <script src="./game/PlayerGameObject.js"></script>
+        <script src="./game/BatSymbolComponent.js"></script>
+        <script src="./game/BatSymbolGameObject.js"></script>
+
+        <script src="./game/CabinGameObject.js"></script>
+        <script src="./game/CloudsGameObject.js"></script>
+        <script src="./game/DockGameObject.js"></script>
+        <script src="./game/DoorGameObject.js"></script>
+        <script src="./game/GrassGameObject.js"></script>
+        <script src="./game/PathGameObject.js"></script>
+        <script src="./game/PostGameObject.js"></script>
+        <script src="./game/SkyGameObject.js"></script>
+        <script src="./game/WaterGameObject.js"></script>
+
+        <!-- <button>Start</button> -->
+
+        <script>
+                        
+            // Engine Specific
+            class Vector2 {
+                constructor(x, y){
+                    this.x = x
+                    this.y = y
+                }
+
+                x
+                y
+            }
+
+            // start()
+
+
+            Engine.currentScene = new MainScene()
+            Engine.start()
+
+        </script>
+    </body>
+</html>
